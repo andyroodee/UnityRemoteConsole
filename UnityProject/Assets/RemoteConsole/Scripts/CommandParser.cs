@@ -50,7 +50,7 @@ namespace RemoteConsole
             for (; index < commandString.Length; index++)
             {
                 // Include everything until we hit an unescaped closing quote.
-                if (index > 0 && commandString[index] == '"' && commandString[index - 1] != '\\')
+                if (commandString[index] == '"' && commandString[index - 1] != '\\')
                 {
                     if (builder.Length > 0)
                     {

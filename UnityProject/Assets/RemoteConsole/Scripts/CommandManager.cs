@@ -6,9 +6,11 @@ using UnityEngine;
 
 namespace RemoteConsole
 {
+    [Serializable]
     public class ConsoleCommandManager
     {
-        public Dictionary<string, MethodInfo> ConsoleCommandMap { get; private set; }
+        [SerializeField]
+        public Dictionary<string, MethodInfo> ConsoleCommandMap;// { get; private set; }
 
         public ConsoleCommandManager()
         {

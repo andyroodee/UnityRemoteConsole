@@ -5,7 +5,7 @@ namespace RemoteConsole
     public class Example : MonoBehaviour
     {
         [ConsoleCommand("DoIt")]
-        public static string DoSomething(string s, int n, float f)
+        public static string DoSomething(string s, int n, float f, CameraType camType, Color col)
         {
             Debug.Log("Doing something with " + s + ", " + n + ", " + f);
             return "you did something\n";
